@@ -1170,3 +1170,70 @@ section.map #map {
 @media (max-width: 480px) {
 
 }
+
+/* bikin item login sejajar horizontal */
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 15px;
+}
+
+/* teks user */
+.user-info {
+    font-size: 14px;
+    color: #363636;
+    white-space: nowrap;
+}
+
+/* tombol login */
+.login-btn {
+    padding: 8px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #f2745f;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+/* hover effect */
+.login-btn:hover {
+    background-color: #f2745f;
+    transform: translateY(-1px);
+}
+
+/* biar navbar tetap rapi di flex/bs */
+.navbar-nav > li.user-section {
+    display: flex;
+    align-items: center;
+}
+
+/* bikin semua item navbar sejajar */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* semua li ikut tinggi navbar */
+.navbar-nav > li {
+    display: flex;
+    align-items: center;
+}
+
+/* khusus user section */
+.user-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto; /* dorong ke kanan */
+}
+
+/* link menu biar tidak turun naik */
+.navbar-nav > li > a {
+    display: block;
+    padding: 15px 12px;
+}
